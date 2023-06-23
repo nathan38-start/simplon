@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylle.css">
     <title> présentation balises html </title>
 </head>
 <body>
@@ -222,7 +222,7 @@
                     <code>LINK rel= href= toto.html</code> : indique que le document courant courant précède le document toto.html
                 </li>
 
-				<li>
+				
             
 
 			
@@ -263,12 +263,161 @@
             
             <pre>
                 <code>
-&lt;LINK rel="stylesheet" href="style.css"&gt;
+&lt;"script type="text/javascript" language="Javascript"&gt;
 
                 </code>
             </pre>
 
         </article>
+		<article id="style">
+            <h2>&lt;style&gt;</h2>
+            <p>La balise <code>&lt;style&gt;</code>est utilisé pour définir les informations de style CSS pour un document HTML </p>
+            <p>Elle peut contenir les attributs suivants :</p>
+            <ul>
+                <li>
+                    <code>media</code> :  Spécifie le type de média pour lequel le lien est optimisé.
+                <li>
+                    <code>scoped</code> : Spécifie que les styles ne s’appliquent qu’à l’élément parent qui contient la balise style ainsi qu’aux éléments HTML enfants – et non pas à tout le document (pris en charge uniquement par Firefox)
+                </li>
+				<li>
+                    <code>type</code> : Précise le type MINE du contenu entre les balises style
+
+				</li>l
+					
+
+			
+            </ul>
+            <p>Exemple :</p>
+            
+            <pre>
+                <code>
+&lt;style "h1 {color:red;}
+p {color:blue;}/style&gt;
+
+                </code>
+            </pre>
+
+      
+&lt;img src="voiturerouge.png" alt="Voiture de sport rouge à un feu"&gt;
+
+                </code>
+            </pre>
+
+        </article>
+		<article id="img">
+            <h2>&lt;img&gt;</h2>
+            <p>La balise <code>&lt;img&gt;</code> La balise (Image) IMG permet d'insérer une image dans le document</p>
+            <p>Elle peut contenir les attributs suivants :</p>
+            <ul>
+                <li>
+                    <code>alt</code> :  Description de l'image
+                <li>
+                    <code>border</code> : Détermine la bordure de l'image.
+                </li>
+				<li>
+                    <code>height / width </code> : Défini les dimensions de l'image,
+
+				</li>
+					<li>
+						<code>ismap</code> : Si cet attribut est renseigné, l'image est utilisé par une balise MAP comme carte cliquable
+	
+						
+
+					<li>
+                    <code> hspace / vspace</code> :Détermine les espaces horizontaux ou verticaux à appliquer pour ajuster le positionnement de l'image. - longdesc : Lien vers un fichier décrivant l'image
+
+					</li>
+					<li>
+						<code>lowsrc </code> : Source de l'image à un format moins volumineux (aperçu) permettant de prévisualiser une image lourde à télécharger.
+					</li>
+						<li>
+							<code> src</code> : Source de l'image, chemin absolu (http://...) ou relatif
+						</li>		
+
+			
+            </ul>
+            <p>Exemple :</p>
+            
+            <pre>
+                <code>
+&lt;img src="voiturerouge.png" alt="Voiture de sport rouge à un feu"&gt;
+
+                </code>
+            </pre>
+
+        </article>
+	</article>
+	<article id="audio">
+		<h2>&lt;audio&gt;</h2>
+		<p>La balise <code>&lt;audio&gt;</code> permet d’intégrer un son dans le document (musique ou autres flux audio)</p>
+		<p>Elle peut contenir les attributs suivants :</p>
+		<ul>
+			<li>
+				<code>autoplay</code> :  Spécifie si la lecture se fait automatiquement au chargement
+			</li>
+				<code>controls</code> : Lorsqu’il est présent, il précise que les contrôles vidéo doivent être affichés ( pause- play- volume- )
+			</li>
+			<li>
+				<code> loop</code> : Indique si la lecture doit se faire en boucle
+
+			</li>
+				<li>
+					<code>muted</code> : Permet de désactiver le son de la vidéo
+
+					
+
+				<li>
+				<code>preload </code> Spécifie comment le son doit être chargée au chargement de la page (ne fonctionne pas sous Internet Explorer ou si l’attribut autoplay est activé). L’attribut preload peut prendre trois valeurs : none – metadata – auto
+
+				</li>
+
+					<li>
+						<code> src</code> : Spécifie la source de l'audio
+					</li>		
+
+		
+		</ul>
+		<p>Exemple :src="https://tutowebdesign.com/media/Sore.mp3" type="audio/mpeg"</p>
+		
+		<pre>
+			<code>
+				<article id="video">
+					<h2>&lt;video&gt;</h2>
+					<p>La balise <code>&lt;video&gt;</code> permet d’intégrer une vidéo dans une page </p>
+					<p>Elle peut contenir les attributs suivants :</p>
+					<ul>
+						    <li>
+							<code>autoplay</code> :  Spécifie si la lecture se fait automatiquement au chargement
+						   </li>
+							<code>controls</code> : Lorsqu’il est présent, il précise que les contrôles vidéo doivent être affichés ( pause- play- volume- )
+						   </li>
+						    <li>
+							<code> loop</code> : Indique si la lecture doit se faire en boucle
+			
+						   </li>
+							<li>
+								<code>height</code> : Spécifier la hauteur de la vidéo
+			
+								
+			
+							</li>
+							<code>preload </code> Spécifie comment le son doit être chargée au chargement de la page (ne fonctionne pas sous Internet Explorer ou si l’attribut autoplay est activé). L’attribut preload peut prendre trois valeurs : none – metadata – auto
+			 
+							    </li>
+			
+						        </li>
+									<code> src</code> : Spécifie la source de l'audio
+								</li>	
+								<li>
+									<code> muted</code> : Spécifies que le son de la vidéo doit être sur mut
+								</li>	
+			
+					
+					</ul>
+					<p>Exemple : src="medias/wildlife.mp4" type="video/mp4"</p>
+					
+					<pre>
+						<code>		
     </section>
 	
 </body>
