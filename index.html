@@ -10,7 +10,7 @@
     <menu>
         <ul>
             <li>
-                <h3>Structure</h3>
+                <h3>principales</h3>
                 <ul class="link-list">
                     <li>
                         <a href="#html">html</a>
@@ -179,15 +179,97 @@
 &lt;html lang="fr"&gt;
     &lt;head&gt;
         &lt;title&gt;présentation métier&lt;/title&gt;
-   
-    
+                </code>
+            </pre>	
+		<article/>
 
 
- 
+		<article id="meta">
+            <h2>&lt;meta&gt;</h2>
+            <p>La balise <code>&lt;meta&gt;</code> sont les balises qui  servent à placer des métadonnées (metadata) dans une page HTML.</p>
+            <p>Elle peut contenir les attributs suivants :</p>
+            <ul>
+                <li>
+                    <code>meta name  </code> : indique la description de la page
+                </li>
+                <li>
+                    <code>meta http-equiv</code> : simule un en- tête de réponse HTTP.
+                </li>
+
+			
+            </ul>
+            <p>Exemple :</p>
+            
+            <pre>
+                <code>
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+
+                </code>
+            </pre>
+        </article>
+		<article id="link">
+            <h2>&lt;link&gt;</h2>
+            <p>La balise <code>&lt;link&gt;</code> permet de  lier un document exter ou un fichier .css au fichier index.html</p>
+            <p>Elle peut contenir les attributs suivants :</p>
+            <ul>
+                <li>
+                    <code>link rev= maid  href= toto@gmail.com </code> : indication de l'auteur avec renvoi vers son adresse email
+                </li>
+                <li>
+                    <code>LINK title= débuter en html  href=</code> : indentification du titre 
+                </li>
+				<li>
+                    <code>LINK rel= href= toto.html</code> : indique que le document courant courant précède le document toto.html
+                </li>
+
+				<li>
+            
+
+			
+            </ul>
+            <p>Exemple :</p>
+            
+            <pre>
+                <code>
+&lt;LINK rel="stylesheet" href="style.css"&gt;
+
                 </code>
             </pre>
 
-		
+        </article>
+		<article id="script">
+            <h2>&lt;script&gt;</h2>
+            <p>La balise <code>&lt;script&gt;</code> La balise SCRIPT permet d'insérer un bloc de code dans la partie HEAD ou BODY d'un document HTML</p>
+            <p>Elle peut contenir les attributs suivants :</p>
+            <ul>
+                <li>
+                    <code>type</code> : spécifie le type d'un script 
+                <li>
+                    <code>charset</code> : Spécifie le codage de caractère utilisé dans un dossier externe du script
+                </li>
+				<li>
+                    <code>defer</code> : Spécifie que l'exécution d'un script devrait être reportée (retardé) jusqu'à après que la page ait été chargée
+				<li>
+					<li>
+						<code>src</code> :Spécifie l'URL source d'un dossier externe du script
+					<li>
+						<li>
+							<code>xml:space</code> :Spécifie si un espace  du  code devrait être préservé
+						<li>
+
+			
+            </ul>
+            <p>Exemple :</p>
+            
+            <pre>
+                <code>
+&lt;LINK rel="stylesheet" href="style.css"&gt;
+
+                </code>
+            </pre>
+
+        </article>
     </section>
+	
 </body>
 </html>
